@@ -1,0 +1,63 @@
+.movie_card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 50px 10px 0px 25px;
+    cursor: pointer;
+}
+
+.image_content {
+    position: relative;
+    transition: transform 0.2s
+}
+
+.over_lay {
+    position: absolute;
+    background-color: #ff6b81;
+    color: #fff;
+    width: 85%;
+    height: 30px;
+    transition: 0.5s ease;
+    opacity: 0;
+    left: 17px;
+    bottom: 10px;
+    font: 20px;
+    text-align: center;
+}
+
+.over_lay:hover {
+    opacity: 1;
+}
+
+.over_lay p {
+    color: #fff;
+}
+
+.favourite_text {
+    padding: 5px 0;
+}
+
+.movie_card img {
+    width: 200px;
+    height: 250px;
+}
+
+.show_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star {
+    display: flex;
+    flex-direction: row;
+}
+
+.star_icon {
+    cursor: pointer;
+    transition: color 200ms;
+    margin-top: 5px;
+}
+
+input[ type="radio"] {
+    display: none;
+}
